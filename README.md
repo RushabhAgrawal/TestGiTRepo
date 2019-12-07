@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 RAJESH DESKTOP
 # TestGiTRepo
 =======
@@ -12,4 +11,3 @@ static void main(String[] args){
 	
 }
 }
->>>>>>> origin/dev
