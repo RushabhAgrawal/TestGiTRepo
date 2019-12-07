@@ -1,8 +1,13 @@
-Rajesh Vikram Demo 
--------------------------
+<<<<<<< HEAD
+
 |||||||||||||||||||||
 MY LOCAL CHANGES
 |||||||||||||||||||||
+=======
+Rajesh Vikram Demo 
+-------------------------
+
+>>>>>>> origin/dev
 ng new travel-booking
 
 ng add @angular/elements
