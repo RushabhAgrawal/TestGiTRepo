@@ -1,0 +1,35 @@
+ng new travel-booking
+
+ng add @angular/elements
+ng add ngx-build-plus
+npm i -g http-server --save
+
+
+ng generate component booking
+
+-----------add this to app.module.ts----------------------
+import { createCustomElement } from '@angular/elements';
+import { BookingComponent } from './booking/booking.component'
+export class AppModule {
+  constructor(private injector: Injector) {
+  }
+  ngDoBootstrap() {
+    const myCustomElement = createCustomElement(BookingComponent, { injector: this.injector });
+    customElements.define('app-flight-booking', myCustomElement);
+  }
+}
+-----------add this to app.module.ts----------------------
+----------add this in angular.json------------------------
+"architect": {   
+"build": {     "builder": "ngx-build-plus:build",   ....
+ 
+"serve": {     
+"builder": "ngx-build-plus:dev-server",     ...
+ "test": {     `  
+"builder": "ngx-build-plus:karma",
+----------add this in angular.json------------------------
+
+ng build --prod --output-hashing none --single-bundle true
+
+http-server ./dist/flight-booking -p 8081
+
