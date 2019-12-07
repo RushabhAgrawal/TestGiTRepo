@@ -6,6 +6,9 @@ RAJESH DESKTOP
 // TestGiTRepo
 arm
 public class Test {
-
+psvm(){
+sop("hi");
+}
+}
 
 Rajesh New
